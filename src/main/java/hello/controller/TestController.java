@@ -1,7 +1,6 @@
 package hello.controller;
 
 import hello.service.TestService;
-import hello.tool.SpringAop;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

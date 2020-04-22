@@ -10,8 +10,10 @@
             <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度,%msg：日志消息，%n是换行符-->
             <!--<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>-->
             <pattern>
-                [ %-5level] [%date{yyyy-MM-dd HH:mm:ss}] [%X{requestId}] %logger{96} [%line] - %msg%n
+                <!--[ %-5level] [%date{yyyy-MM-dd HH:mm:ss}] [%X{traceId}] %logger{96} [%line] - %msg%n-->
+                [%p][%d{yyyy-MM-dd'T'HH:mm:ss.SSSZ,Asia/Shanghai}][%X{traceId}][%15.15t][%c:%L] %msg%n
             </pattern>
+
         </encoder>
     </appender>
 
@@ -27,7 +29,8 @@
             <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
             <!--<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>-->
             <pattern>
-                [ %-5level] [%date{yyyy-MM-dd HH:mm:ss}] [%X{requestId}] %logger{96} [%line] - %msg%n
+                <!--[ %-5level] [%date{yyyy-MM-dd HH:mm:ss}] [%X{traceId}] %logger{96} [%line] - %msg%n-->
+                [%p][%d{yyyy-MM-dd'T'HH:mm:ss.SSSZ,Asia/Shanghai}][%X{traceId}][%15.15t][%c:%L] %msg%n
             </pattern>
         </encoder>
         <!--日志文件最大的大小-->
