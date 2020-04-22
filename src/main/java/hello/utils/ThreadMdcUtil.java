@@ -10,7 +10,7 @@ import java.util.concurrent.*;
 
 /**
  * @author kingflag
- * Created by kingflag on 2019/6/4.
+ *         Created by kingflag on 2019/6/4.
  */
 public class ThreadMdcUtil {
 

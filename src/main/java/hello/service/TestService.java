@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 /**
  * @author kingflag
- * Created by kingflag on 2019/6/4.
+ *         Created by kingflag on 2019/6/4.
  */
 @Service
 public class TestService {
@@ -17,9 +17,10 @@ public class TestService {
 
     @Autowired
     private TestDao testDao;
-    public String test(String entity){
 
-        if (entity == null){
+    public String test(String entity) {
+
+        if (entity == null) {
             entity = "entity";
         }
         String result = testDao.dao(entity + "-------->Service");

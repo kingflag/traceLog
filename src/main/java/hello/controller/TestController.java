@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author kingflag
- * Created by kingflag on 2019/6/4.
+ *         Created by kingflag on 2019/6/4.
  */
 @RestController
 @RequestMapping("/testController")
@@ -21,7 +21,7 @@ public class TestController {
     private TestService testService;
 
     @RequestMapping("/testMethod")
-    public String testMethod(String entity){
+    public String testMethod(String entity) {
         String result = testService.test(entity + "------->Controller");
         logger.info("TestController");
         return result;
