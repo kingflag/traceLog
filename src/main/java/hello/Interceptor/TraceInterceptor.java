@@ -7,7 +7,6 @@ package hello.Interceptor;
 import hello.constants.Constants;
 import hello.utils.TraceLogUtils;
 import org.slf4j.MDC;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;

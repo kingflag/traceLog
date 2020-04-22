@@ -14,6 +14,7 @@ public class TestDao {
     private static final Logger logger = LoggerFactory.getLogger(TestDao.class);
     public String dao(String entity){
         logger.info("TestDao");
+//        throw new RuntimeException();
         return entity;
     }
 }
